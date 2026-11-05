@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import CategoryNav from './components/CategoryNav';
@@ -8,9 +8,12 @@ import CompareDrawer from './components/CompareDrawer';
 import CompareModal from './components/CompareModal';
 import ToolDetailModal from './components/ToolDetailModal';
 import SubmitToolModal from './components/SubmitToolModal';
+import AuthModal from './components/AuthModal';
+import AdminModal from './components/AdminModal';
 import NewsletterSection from './components/NewsletterSection';
 import Footer from './components/Footer';
 import { categories, toolsData } from './data/toolsData';
+import { supabase } from './lib/supabase';
 import { Sparkles, Scale, RefreshCw } from 'lucide-react';
 
 export default function App() {
@@ -23,6 +26,27 @@ export default function App() {
   const [isCompareModalOpen, setIsCompareModalOpen] = useState(false);
   const [selectedToolDetail, setSelectedToolDetail] = useState(null);
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [isAdminModalOpen, setIsAdminModalOpen] = useState(false);
+  const [user, setUser] = useState(null);
+
+  // Monitor Supabase Authentication state
+  useEffect(() => {
+    // Check initial session
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setUser(session?.user ?? null);
+    });
+
+    // Listen for auth state changes
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null);
+      if (session?.user) {
+        setIsAuthModalOpen(false);
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
 
   // Dynamic category counts based on current tools list
   const dynamicCategories = useMemo(() => {
@@ -120,7 +144,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
       
-      {/* Header */}
+      {/* Header with Google/Email Auth & Admin DB */}
       <Header
         selectedCategory={selectedCategory}
         onSelectCategory={setSelectedCategory}
@@ -128,6 +152,9 @@ export default function App() {
         compareCount={comparedTools.length}
         onOpenCompare={() => setIsCompareModalOpen(true)}
         onOpenSubmitModal={() => setIsSubmitModalOpen(true)}
+        onOpenAuthModal={() => setIsAuthModalOpen(true)}
+        onOpenAdminModal={() => setIsAdminModalOpen(true)}
+        user={user}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
       />
@@ -224,7 +251,7 @@ export default function App() {
           </div>
         )}
 
-        {/* Newsletter Section */}
+        {/* Newsletter Section (Integrated with Supabase) */}
         <NewsletterSection />
 
       </main>
@@ -256,12 +283,25 @@ export default function App() {
         onToggleCompare={handleToggleCompare}
       />
 
-      {/* Submit Tool Modal */}
+      {/* Submit Tool Modal (Saves to Supabase Database) */}
       <SubmitToolModal
         isOpen={isSubmitModalOpen}
         onClose={() => setIsSubmitModalOpen(false)}
         categories={categories}
         onAddTool={handleAddTool}
+      />
+
+      {/* User Login Modal (Google OAuth & Magic Link) */}
+      <AuthModal
+        isOpen={isAuthModalOpen}
+        onClose={() => setIsAuthModalOpen(false)}
+        user={user}
+      />
+
+      {/* Admin Dashboard Modal (Live Supabase View) */}
+      <AdminModal
+        isOpen={isAdminModalOpen}
+        onClose={() => setIsAdminModalOpen(false)}
       />
 
       {/* Footer */}
