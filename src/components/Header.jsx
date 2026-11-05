@@ -10,7 +10,8 @@ import {
   LogIn,
   LogOut,
   User,
-  ShieldCheck
+  ShieldCheck,
+  Code2
 } from 'lucide-react';
 import { signOutUser } from '../lib/supabase';
 
@@ -23,6 +24,7 @@ export default function Header({
   onOpenSubmitModal,
   onOpenAuthModal,
   onOpenAdminModal,
+  onOpenApiModal,
   user,
   searchQuery,
   setSearchQuery
@@ -99,6 +101,16 @@ export default function Header({
             >
               <PlusCircle className="w-4 h-4 text-indigo-400" />
               <span>Submit Tool</span>
+            </button>
+
+            {/* Public REST API Button */}
+            <button
+              onClick={onOpenApiModal}
+              className="flex items-center gap-1.5 px-2.5 sm:px-3 py-2 rounded-xl text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 transition-all cursor-pointer"
+              title="Open Public REST API"
+            >
+              <Code2 className="w-4 h-4" />
+              <span className="hidden sm:inline">Free API</span>
             </button>
 
             {/* Admin Dashboard Trigger */}

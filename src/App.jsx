@@ -10,6 +10,7 @@ import ToolDetailModal from './components/ToolDetailModal';
 import SubmitToolModal from './components/SubmitToolModal';
 import AuthModal from './components/AuthModal';
 import AdminModal from './components/AdminModal';
+import ApiModal from './components/ApiModal';
 import NewsletterSection from './components/NewsletterSection';
 import FaqSection from './components/FaqSection';
 import Footer from './components/Footer';
@@ -29,6 +30,7 @@ export default function App() {
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [isAdminModalOpen, setIsAdminModalOpen] = useState(false);
+  const [isApiModalOpen, setIsApiModalOpen] = useState(false);
   const [user, setUser] = useState(null);
 
   // Monitor Supabase Authentication state
@@ -155,6 +157,7 @@ export default function App() {
         onOpenSubmitModal={() => setIsSubmitModalOpen(true)}
         onOpenAuthModal={() => setIsAuthModalOpen(true)}
         onOpenAdminModal={() => setIsAdminModalOpen(true)}
+        onOpenApiModal={() => setIsApiModalOpen(true)}
         user={user}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
@@ -308,6 +311,12 @@ export default function App() {
         onClose={() => setIsAdminModalOpen(false)}
       />
 
+      {/* Developer REST API Modal */}
+      <ApiModal
+        isOpen={isApiModalOpen}
+        onClose={() => setIsApiModalOpen(false)}
+      />
+
       {/* Footer */}
       <Footer
         categories={categories}
@@ -316,6 +325,7 @@ export default function App() {
           window.scrollTo({ top: 320, behavior: 'smooth' });
         }}
         onOpenSubmitModal={() => setIsSubmitModalOpen(true)}
+        onOpenApiModal={() => setIsApiModalOpen(true)}
       />
 
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Sparkles, Heart, Shield, FileText, Send } from 'lucide-react';
 
-export default function Footer({ onSelectCategory, categories, onOpenSubmitModal }) {
+export default function Footer({ onSelectCategory, categories, onOpenSubmitModal, onOpenApiModal }) {
   return (
     <footer className="border-t border-slate-800 bg-slate-950 text-slate-400 text-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -53,6 +53,14 @@ export default function Footer({ onSelectCategory, categories, onOpenSubmitModal
                   </button>
                 </li>
               ))}
+              <li>
+                <button 
+                  onClick={onOpenApiModal}
+                  className="text-emerald-400 font-semibold hover:underline"
+                >
+                  ⚡ Developer REST API
+                </button>
+              </li>
               <li>
                 <button 
                   onClick={onOpenSubmitModal}
