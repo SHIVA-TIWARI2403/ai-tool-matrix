@@ -11,6 +11,7 @@ import SubmitToolModal from './components/SubmitToolModal';
 import AuthModal from './components/AuthModal';
 import AdminModal from './components/AdminModal';
 import NewsletterSection from './components/NewsletterSection';
+import FaqSection from './components/FaqSection';
 import Footer from './components/Footer';
 import { categories, toolsData } from './data/toolsData';
 import { supabase } from './lib/supabase';
@@ -250,6 +251,9 @@ export default function App() {
             ))}
           </div>
         )}
+
+        {/* FAQ Section (AEO & GEO Knowledge Base) */}
+        <FaqSection />
 
         {/* Newsletter Section (Integrated with Supabase) */}
         <NewsletterSection />
