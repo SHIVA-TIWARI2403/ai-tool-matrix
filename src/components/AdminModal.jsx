@@ -5,8 +5,6 @@ import {
   Mail, 
   FileText, 
   RefreshCw, 
-  CheckCircle2, 
-  Clock, 
   ExternalLink,
   ShieldCheck,
   Database

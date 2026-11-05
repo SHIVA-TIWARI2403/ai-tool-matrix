@@ -1,20 +1,12 @@
 import React from 'react';
 import { 
   Sparkles, 
-  Video, 
-  Film, 
-  Image as ImageIcon, 
-  BotMessageSquare, 
   Scale, 
-  Mic, 
-  Code2, 
-  Zap, 
   CheckCircle2,
-  TrendingUp,
   DollarSign
 } from 'lucide-react';
 
-export default function Hero({ totalToolsCount, onSelectCategory }) {
+export default function Hero({ totalToolsCount }) {
   return (
     <div className="relative overflow-hidden pt-8 pb-6 border-b border-slate-800/60 bg-gradient-to-b from-slate-900/50 via-slate-950 to-slate-950">
       

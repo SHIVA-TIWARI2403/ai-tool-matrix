@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Sparkles, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Mail, CheckCircle2, ArrowRight } from 'lucide-react';
 import { subscribeNewsletter } from '../lib/supabase';
 
 export default function NewsletterSection() {

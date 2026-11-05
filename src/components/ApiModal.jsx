@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Terminal, Code2, Copy, Check, ExternalLink, Globe, Sparkles, CheckCircle2 } from 'lucide-react';
+import { X, Code2, Copy, Check, ExternalLink, CheckCircle2 } from 'lucide-react';
 
 export default function ApiModal({ isOpen, onClose }) {
   const [activeTab, setActiveTab] = useState('javascript');

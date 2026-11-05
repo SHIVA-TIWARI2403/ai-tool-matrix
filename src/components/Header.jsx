@@ -3,13 +3,9 @@ import {
   Sparkles, 
   Scale, 
   PlusCircle, 
-  Layers, 
-  ExternalLink,
   Search,
-  CheckCircle2,
   LogIn,
   LogOut,
-  User,
   ShieldCheck,
   Code2
 } from 'lucide-react';

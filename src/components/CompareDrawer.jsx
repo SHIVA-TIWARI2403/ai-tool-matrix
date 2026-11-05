@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scale, X, ArrowRight, Sparkles } from 'lucide-react';
+import { Scale, X, ArrowRight } from 'lucide-react';
 
 export default function CompareDrawer({ 
   comparedTools, 

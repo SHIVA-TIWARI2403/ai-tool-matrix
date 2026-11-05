@@ -4,20 +4,14 @@ import {
   ExternalLink, 
   Scale, 
   Check, 
-  Zap, 
-  CheckCircle2, 
-  XCircle, 
-  ShieldCheck, 
-  Info,
-  DollarSign
+  Info
 } from 'lucide-react';
 
 export default function ToolCard({ 
   tool, 
   isCompared, 
   onToggleCompare, 
-  onOpenDetails,
-  onCompareWithSimilar
+  onOpenDetails
 }) {
   // Pricing badge color logic
   const getPricingBadge = (type) => {

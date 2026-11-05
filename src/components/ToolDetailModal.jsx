@@ -6,14 +6,9 @@ import {
   Check, 
   Minus, 
   Scale, 
-  ShieldCheck, 
-  Zap, 
   Coins, 
   Layers, 
-  Share2,
-  CheckCircle2,
-  Terminal,
-  Clock
+  CheckCircle2
 } from 'lucide-react';
 
 export default function ToolDetailModal({ tool, isOpen, onClose, isCompared, onToggleCompare }) {

@@ -6,10 +6,7 @@ import {
   Check, 
   Minus, 
   Scale, 
-  Sparkles,
-  ShieldCheck,
   CheckCircle2,
-  XCircle,
   HelpCircle
 } from 'lucide-react';
 
@@ -18,7 +15,6 @@ export default function CompareModal({
   onClose, 
   tools, 
   onRemoveTool,
-  allTools,
   onSelectPreset
 }) {
   if (!isOpen) return null;

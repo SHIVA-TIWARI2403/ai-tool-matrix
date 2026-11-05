@@ -16,7 +16,7 @@ import FaqSection from './components/FaqSection';
 import Footer from './components/Footer';
 import { categories, toolsData } from './data/toolsData';
 import { supabase } from './lib/supabase';
-import { Sparkles, Scale, RefreshCw } from 'lucide-react';
+import { Scale, Sparkles } from 'lucide-react';
 
 export default function App() {
   const [tools, setTools] = useState(toolsData);
@@ -277,7 +277,6 @@ export default function App() {
         onClose={() => setIsCompareModalOpen(false)}
         tools={comparedTools}
         onRemoveTool={handleRemoveComparedTool}
-        allTools={tools}
         onSelectPreset={handleSelectPreset}
       />
 

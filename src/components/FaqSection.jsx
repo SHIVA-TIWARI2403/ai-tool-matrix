@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HelpCircle, ChevronDown, Sparkles, CheckCircle2 } from 'lucide-react';
+import { HelpCircle, ChevronDown, CheckCircle2 } from 'lucide-react';
 
 export default function FaqSection() {
   const [openIdx, setOpenIdx] = useState(null);

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, PlusCircle, CheckCircle2, Sparkles, Send } from 'lucide-react';
+import { X, PlusCircle, CheckCircle2, Send } from 'lucide-react';
 import { submitToolToDb } from '../lib/supabase';
 
 export default function SubmitToolModal({ isOpen, onClose, categories, onAddTool }) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Heart, Shield, FileText, Send } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export default function Footer({ onSelectCategory, categories, onOpenSubmitModal, onOpenApiModal }) {
   return (

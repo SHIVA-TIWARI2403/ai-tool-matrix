@@ -1,5 +1,5 @@
 import React from 'react';
-import { Filter, SlidersHorizontal, ArrowUpDown } from 'lucide-react';
+import { Filter, ArrowUpDown } from 'lucide-react';
 
 export default function FilterBar({ 
   pricingFilter, 

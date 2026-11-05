@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { X, Mail, Sparkles, CheckCircle2, AlertCircle, LogIn, ArrowRight } from 'lucide-react';
+import { X, Mail, CheckCircle2, AlertCircle, LogIn } from 'lucide-react';
 import { signInWithGoogle, signInWithEmail } from '../lib/supabase';
 
-export default function AuthModal({ isOpen, onClose, user }) {
+export default function AuthModal({ isOpen, onClose }) {
   const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
