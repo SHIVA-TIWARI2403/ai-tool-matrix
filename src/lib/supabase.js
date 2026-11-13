@@ -103,3 +103,58 @@ export async function fetchSubscribers() {
   if (error) throw error;
   return data || [];
 }
+
+/**
+ * Fetch User Favorites
+ */
+export async function fetchUserFavorites(userId) {
+  if (!userId) return [];
+  const { data, error } = await supabase
+    .from('ai_tool_favorites')
+    .select('tool_id')
+    .eq('user_id', userId);
+  if (error) {
+    console.error('Error fetching favorites:', error);
+    return [];
+  }
+  return (data || []).map(row => row.tool_id);
+}
+
+/**
+ * Add Tool to Favorites
+ */
+export async function addFavorite(userId, toolId) {
+  if (!userId || !toolId) return;
+  const { error } = await supabase
+    .from('ai_tool_favorites')
+    .insert([{ user_id: userId, tool_id: toolId }]);
+  if (error && error.code !== '23505') {
+    throw error;
+  }
+}
+
+/**
+ * Remove Tool from Favorites
+ */
+export async function removeFavorite(userId, toolId) {
+  if (!userId || !toolId) return;
+  const { error } = await supabase
+    .from('ai_tool_favorites')
+    .delete()
+    .eq('user_id', userId)
+    .eq('tool_id', toolId);
+  if (error) throw error;
+}
+
+/**
+ * Update Submission Status (Approve / Reject)
+ */
+export async function updateSubmissionStatus(id, status) {
+  const { data, error } = await supabase
+    .from('ai_tool_submissions')
+    .update({ status })
+    .eq('id', id)
+    .select();
+  if (error) throw error;
+  return data;
+}

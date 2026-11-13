@@ -34,14 +34,14 @@ export default function FaqSection() {
   return (
     <section className="my-16 max-w-4xl mx-auto px-4" aria-label="Frequently Asked Questions">
       <div className="text-center mb-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold mb-3">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-200 text-orange-600 text-xs font-semibold mb-3">
           <HelpCircle className="w-3.5 h-3.5" />
           <span>AEO & GEO Knowledge Base</span>
         </div>
-        <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+        <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
           Frequently Asked Questions & AI Comparisons
         </h3>
-        <p className="text-xs sm:text-sm text-slate-400 mt-2">
+        <p className="text-xs sm:text-sm text-slate-500 mt-2">
           Direct, verified answers for creators, developers, and AI researchers.
         </p>
       </div>
@@ -52,26 +52,26 @@ export default function FaqSection() {
           return (
             <div
               key={idx}
-              className="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden transition-all duration-200"
+              className="bg-white/80 backdrop-blur-md border border-slate-200/90 rounded-2xl overflow-hidden shadow-xs transition-all duration-200 hover:border-orange-300"
             >
               <button
                 onClick={() => toggleFaq(idx)}
-                className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 cursor-pointer hover:bg-slate-850/50 transition-colors"
+                className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 cursor-pointer hover:bg-orange-50/30 transition-colors"
                 aria-expanded={isOpen}
               >
-                <span className="font-bold text-sm sm:text-base text-slate-200">
+                <span className="font-bold text-sm sm:text-base text-slate-800">
                   {faq.q}
                 </span>
                 <ChevronDown
                   className={`w-4 h-4 text-slate-400 shrink-0 transition-transform duration-200 ${
-                    isOpen ? 'rotate-180 text-indigo-400' : ''
+                    isOpen ? 'rotate-180 text-orange-600' : ''
                   }`}
                 />
               </button>
               {isOpen && (
-                <div className="px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <div className="px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                  <div className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0 mt-0.5" />
                     <span>{faq.a}</span>
                   </div>
                 </div>

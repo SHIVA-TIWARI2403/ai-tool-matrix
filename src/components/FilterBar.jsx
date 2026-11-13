@@ -1,5 +1,5 @@
 import React from 'react';
-import { Filter, ArrowUpDown } from 'lucide-react';
+import { Filter, SlidersHorizontal, ArrowUpDown } from 'lucide-react';
 
 export default function FilterBar({ 
   pricingFilter, 
@@ -13,27 +13,27 @@ export default function FilterBar({
     { label: 'All Pricing', value: 'all' },
     { label: '🟢 Free & Open Source', value: 'free-open' },
     { label: '🟡 Freemium (Free Tier)', value: 'Freemium' },
-    { label: '🟣 Paid / Enterprise', value: 'Paid' },
+    { label: '🟣 Paid Only', value: 'Paid' },
   ];
 
   return (
-    <div className="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-4 mb-6 shadow-sm">
+    <div className="bg-white/80 border border-slate-200/90 rounded-2xl p-4 mb-6 shadow-sm backdrop-blur-md">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         
         {/* Pricing Filter Buttons */}
         <div className="flex items-center gap-1.5 flex-wrap">
-          <div className="flex items-center gap-1 text-xs font-semibold text-slate-400 mr-2">
-            <Filter className="w-3.5 h-3.5 text-indigo-400" />
+          <div className="flex items-center gap-1 text-xs font-bold text-slate-500 mr-2">
+            <Filter className="w-3.5 h-3.5 text-orange-500" />
             <span>Pricing:</span>
           </div>
           {pricingOptions.map((opt) => (
             <button
               key={opt.value}
               onClick={() => setPricingFilter(opt.value)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+              className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
                 pricingFilter === opt.value
-                  ? 'bg-indigo-600 text-white shadow-sm'
-                  : 'bg-slate-800/70 text-slate-300 hover:bg-slate-800 hover:text-white border border-slate-700/50'
+                  ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-sm ring-1 ring-orange-400'
+                  : 'bg-white text-slate-700 hover:bg-orange-50/60 hover:text-orange-600 hover:border-orange-200 border border-slate-200 shadow-xs'
               }`}
             >
               {opt.label}
@@ -43,8 +43,8 @@ export default function FilterBar({
 
         {/* Sort & Results Count */}
         <div className="flex items-center justify-between md:justify-end gap-3">
-          <span className="text-xs text-slate-400 font-medium">
-            Showing <strong className="text-white">{totalResults}</strong> tools
+          <span className="text-xs text-slate-500 font-medium">
+            Showing <strong className="text-slate-900 font-bold">{totalResults}</strong> tools
           </span>
 
           <div className="flex items-center gap-2">
@@ -52,7 +52,7 @@ export default function FilterBar({
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="bg-slate-800 border border-slate-700 text-slate-200 text-xs rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-indigo-500"
+              className="bg-white border border-slate-200 text-slate-700 text-xs font-medium rounded-xl px-3 py-1.5 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 shadow-xs cursor-pointer"
             >
               <option value="rating">Highest Rated</option>
               <option value="reviews">Most Popular</option>
