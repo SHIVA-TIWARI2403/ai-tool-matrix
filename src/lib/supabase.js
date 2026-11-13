@@ -158,3 +158,50 @@ export async function updateSubmissionStatus(id, status) {
   if (error) throw error;
   return data;
 }
+
+/**
+ * Delete Tool Submission from Supabase Database
+ */
+export async function deleteSubmission(id) {
+  const { error } = await supabase
+    .from('ai_tool_submissions')
+    .delete()
+    .eq('id', id);
+  if (error) throw error;
+  return true;
+}
+
+/**
+ * Delete Subscriber from Supabase Database
+ */
+export async function deleteSubscriber(id) {
+  const { error } = await supabase
+    .from('ai_tool_subscribers')
+    .delete()
+    .eq('id', id);
+  if (error) throw error;
+  return true;
+}
+
+/**
+ * Direct Add Tool by Admin (Immediately Approved)
+ */
+export async function addDirectApprovedTool(toolData) {
+  const { data, error } = await supabase
+    .from('ai_tool_submissions')
+    .insert([{
+      name: toolData.name,
+      category: toolData.category,
+      pricing_type: toolData.pricingType,
+      starting_price: toolData.startingPrice,
+      free_tier_details: toolData.freeTierDetails,
+      website_url: toolData.websiteUrl,
+      tagline: toolData.tagline,
+      creator_email: toolData.creatorEmail || 'admin@toolmatrix.ai',
+      status: 'approved'
+    }])
+    .select();
+  if (error) throw error;
+  return data;
+}
+

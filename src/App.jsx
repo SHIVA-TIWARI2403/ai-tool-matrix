@@ -437,6 +437,9 @@ export default function App() {
       <AdminModal
         isOpen={isAdminModalOpen}
         onClose={() => setIsAdminModalOpen(false)}
+        categories={categories}
+        tools={tools}
+        onAddTool={handleAddTool}
       />
 
       {/* Developer REST API Modal */}
