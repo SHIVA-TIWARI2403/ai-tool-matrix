@@ -1,0 +1,1002 @@
+{
+  "success": true,
+  "total": 30,
+  "updated_at": "2026-11-05T15:03:33.951Z",
+  "tools": [
+    {
+      "id": "runway-gen3",
+      "name": "Runway Gen-3 Alpha",
+      "tagline": "Industry-standard cinematic text & image to video generation with camera motion.",
+      "category": "text-to-video",
+      "categoryName": "Text to Video",
+      "pricingType": "Freemium",
+      "startingPrice": "$12/mo",
+      "freeTierDetails": "125 one-time credits on free signup",
+      "rating": 4.8,
+      "reviewsCount": 3820,
+      "badges": [
+        "Top Choice",
+        "Cinematic"
+      ],
+      "websiteUrl": "https://runwayml.com",
+      "specs": {
+        "resolution": "1080p Full HD (4K upscale)",
+        "duration": "5s - 10s per generation",
+        "generationSpeed": "Fast (~60-90 seconds)",
+        "commercialUse": "Yes (on Standard plan & above)",
+        "apiAvailable": "Yes (Runway API)",
+        "keyFeature": "Motion Brush, Keyframes, Director Camera Controls",
+        "pros": [
+          "Incredible photorealism and camera control",
+          "High fidelity human motion",
+          "Powerful video-to-video editing"
+        ],
+        "cons": [
+          "Free credits exhaust quickly",
+          "10-second limit per clip"
+        ]
+      }
+    },
+    {
+      "id": "luma-dream-machine",
+      "name": "Luma Dream Machine",
+      "tagline": "High-speed video model with smooth camera movement and consistent 3D physics.",
+      "category": "text-to-video",
+      "categoryName": "Text to Video",
+      "pricingType": "Freemium",
+      "startingPrice": "$9.99/mo",
+      "freeTierDetails": "30 free video generations per month",
+      "rating": 4.7,
+      "reviewsCount": 2190,
+      "badges": [
+        "High Speed",
+        "Smooth Camera"
+      ],
+      "websiteUrl": "https://lumalabs.ai/dream-machine",
+      "specs": {
+        "resolution": "720p / 1080p",
+        "duration": "5s clips (Extendable)",
+        "generationSpeed": "Ultra-fast (~45-75 seconds)",
+        "commercialUse": "Yes (Paid tiers)",
+        "apiAvailable": "Yes (Luma API)",
+        "keyFeature": "Seamless clip extension & rapid preview rendering",
+        "pros": [
+          "Generous 30 free monthly generations",
+          "Fluid camera rotations",
+          "Clean UI"
+        ],
+        "cons": [
+          "Occasional anatomy artifacts on rapid motions",
+          "Queue delays during peak hours"
+        ]
+      }
+    },
+    {
+      "id": "kling-ai",
+      "name": "Kling AI",
+      "tagline": "Realistic physics-driven video generation with natural character movement and 1080p clarity.",
+      "category": "text-to-video",
+      "categoryName": "Text to Video",
+      "pricingType": "Freemium",
+      "startingPrice": "$10/mo",
+      "freeTierDetails": "Daily 66 free credits on login",
+      "rating": 4.9,
+      "reviewsCount": 4120,
+      "badges": [
+        "Best Physics",
+        "Trending"
+      ],
+      "websiteUrl": "https://klingai.com",
+      "specs": {
+        "resolution": "1080p HD",
+        "duration": "5s - 10s clips",
+        "generationSpeed": "Moderate (~2-3 minutes)",
+        "commercialUse": "Yes on paid subscriptions",
+        "apiAvailable": "Yes",
+        "keyFeature": "3D Spatiotemporal attention model for true physical dynamics",
+        "pros": [
+          "Realistic eating, water, and fabric physics",
+          "Daily free credits without payment",
+          "Great facial consistency"
+        ],
+        "cons": [
+          "Generation takes longer than Luma",
+          "Occasional heavy server load"
+        ]
+      }
+    },
+    {
+      "id": "minimax-hailuo",
+      "name": "Hailuo AI (MiniMax Video-01)",
+      "tagline": "Breakthrough video model renowned for lifelike human facial emotions and natural acting.",
+      "category": "text-to-video",
+      "categoryName": "Text to Video",
+      "pricingType": "Freemium",
+      "startingPrice": "Free Beta / $10/mo",
+      "freeTierDetails": "Generous daily free generations during beta",
+      "rating": 4.8,
+      "reviewsCount": 1850,
+      "badges": [
+        "Best Faces",
+        "Viral"
+      ],
+      "websiteUrl": "https://hailuoai.video",
+      "specs": {
+        "resolution": "720p / 1080p 25fps",
+        "duration": "6 seconds",
+        "generationSpeed": "Fast (~60 seconds)",
+        "commercialUse": "Permitted",
+        "apiAvailable": "Yes (MiniMax API)",
+        "keyFeature": "Expressive facial emotional dynamics and cinema grading",
+        "pros": [
+          "Unmatched facial expression realism",
+          "Great free tier quota",
+          "Clean natural colors"
+        ],
+        "cons": [
+          "No advanced camera angle sliders yet",
+          "Limited aspect ratio controls"
+        ]
+      }
+    },
+    {
+      "id": "pika-labs",
+      "name": "Pika 2.0",
+      "tagline": "Creative video generator famous for interactive special effects (Melt, Explode, Crush).",
+      "category": "text-to-video",
+      "categoryName": "Text to Video",
+      "pricingType": "Freemium",
+      "startingPrice": "$10/mo",
+      "freeTierDetails": "30 free daily credits",
+      "rating": 4.6,
+      "reviewsCount": 2900,
+      "badges": [
+        "Fun Effects",
+        "Animation"
+      ],
+      "websiteUrl": "https://pika.art",
+      "specs": {
+        "resolution": "720p / 1080p upscale",
+        "duration": "4s - 8s",
+        "generationSpeed": "Fast (~45-60 seconds)",
+        "commercialUse": "Yes (Standard plan)",
+        "apiAvailable": "Yes",
+        "keyFeature": "Pikaffects (Melt, Inflate, Crumble, Dissolve)",
+        "pros": [
+          "Unique viral physical distortion effects",
+          "Built-in sound effects generation",
+          "Lip sync support"
+        ],
+        "cons": [
+          "Slightly lower photorealism than Runway",
+          "Watermark on free tier"
+        ]
+      }
+    },
+    {
+      "id": "openai-sora",
+      "name": "OpenAI Sora",
+      "tagline": "Flagship world simulator generating complex scenes with multiple characters and depth.",
+      "category": "text-to-video",
+      "categoryName": "Text to Video",
+      "pricingType": "Paid",
+      "startingPrice": "$20/mo (ChatGPT Plus/Pro)",
+      "freeTierDetails": "No free tier (Requires active Plus/Pro account)",
+      "rating": 4.9,
+      "reviewsCount": 5200,
+      "badges": [
+        "Enterprise Grade",
+        "Flagship"
+      ],
+      "websiteUrl": "https://openai.com/sora",
+      "specs": {
+        "resolution": "Up to 1080p",
+        "duration": "Up to 20 seconds",
+        "generationSpeed": "Variable (~2-5 mins)",
+        "commercialUse": "Yes (Subject to OpenAI terms)",
+        "apiAvailable": "API rolling out",
+        "keyFeature": "Long coherence, accurate environmental simulation and camera paths",
+        "pros": [
+          "Unrivaled 20-second continuous scenes",
+          "Complex multi-subject tracking",
+          "High dynamic range"
+        ],
+        "cons": [
+          "Paid subscription mandatory",
+          "Rigid content safety filters"
+        ]
+      }
+    },
+    {
+      "id": "viggle-ai",
+      "name": "Viggle AI",
+      "tagline": "Character motion control & meme replication: animate any static person with custom choreography.",
+      "category": "image-to-video",
+      "categoryName": "Image to Video",
+      "pricingType": "Freemium",
+      "startingPrice": "$9.99/mo",
+      "freeTierDetails": "Free credits on Web & Discord",
+      "rating": 4.7,
+      "reviewsCount": 3100,
+      "badges": [
+        "Motion Transfer",
+        "Viral Memes"
+      ],
+      "websiteUrl": "https://viggle.ai",
+      "specs": {
+        "resolution": "720p / 1080p",
+        "duration": "5s - 30s",
+        "generationSpeed": "Fast (1-2 mins)",
+        "commercialUse": "Yes on Pro",
+        "apiAvailable": "Yes",
+        "keyFeature": "JALEO character physics engine (rigging without 3D models)",
+        "pros": [
+          "Hilarious and accurate dance replication",
+          "Green screen export",
+          "Easy image-to-motion transfer"
+        ],
+        "cons": [
+          "Edges can be jagged on loose clothing",
+          "Requires good reference video"
+        ]
+      }
+    },
+    {
+      "id": "heygen",
+      "name": "HeyGen",
+      "tagline": "AI studio for realistic talking head avatars, corporate video production, and multi-language translation.",
+      "category": "image-to-video",
+      "categoryName": "Image to Video",
+      "pricingType": "Freemium",
+      "startingPrice": "$29/mo",
+      "freeTierDetails": "1 free video credit on signup",
+      "rating": 4.8,
+      "reviewsCount": 4600,
+      "badges": [
+        "Best for Business",
+        "Avatars"
+      ],
+      "websiteUrl": "https://heygen.com",
+      "specs": {
+        "resolution": "1080p / 4K UHD",
+        "duration": "Up to 30 mins (plan dependent)",
+        "generationSpeed": "Near real-time",
+        "commercialUse": "Full commercial rights",
+        "apiAvailable": "Comprehensive REST API & SDK",
+        "keyFeature": "Photo Avatar IV, Voice Cloning, 175+ multi-language auto-dubbing",
+        "pros": [
+          "Flawless lip sync and head gestures",
+          "Custom instant avatar from 2 min video",
+          "Video translation with voice match"
+        ],
+        "cons": [
+          "Higher starting price point",
+          "Credit consumption on long videos"
+        ]
+      }
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney (v6.1)",
+      "tagline": "The undisputed gold standard for artistic aesthetics, photorealism, and cinematic lighting.",
+      "category": "text-to-image",
+      "categoryName": "Text to Image",
+      "pricingType": "Paid",
+      "startingPrice": "$10/mo",
+      "freeTierDetails": "No free trial (Subscription required)",
+      "rating": 4.9,
+      "reviewsCount": 9400,
+      "badges": [
+        "Aesthetic King",
+        "Top Rated"
+      ],
+      "websiteUrl": "https://midjourney.com",
+      "specs": {
+        "resolution": "Up to 2048×2048+ with upscalers",
+        "generationSpeed": "Ultra-fast (~30-50s)",
+        "commercialUse": "Yes (Paid subscribers own assets)",
+        "apiAvailable": "No official public API",
+        "keyFeature": "Vary Region, Inpainting, Web Editor, Aesthetic Nuance",
+        "pros": [
+          "Superior aesthetic composition and lighting",
+          "New dedicated Web UI (No Discord needed)",
+          "Style Reference (--sref) feature"
+        ],
+        "cons": [
+          "No free tier",
+          "No official API for programmatic integration"
+        ]
+      }
+    },
+    {
+      "id": "flux-one",
+      "name": "FLUX.1 (Black Forest Labs)",
+      "tagline": "Open-weight powerhouse rivaling Midjourney in anatomy, photorealism, and complex prompt accuracy.",
+      "category": "text-to-image",
+      "categoryName": "Text to Image",
+      "pricingType": "Open Source",
+      "startingPrice": "Free (Local) / $0.03 per image (API)",
+      "freeTierDetails": "Free on HuggingFace / Replicate / Fal.ai free trials",
+      "rating": 4.9,
+      "reviewsCount": 6800,
+      "badges": [
+        "Open Source",
+        "Hyper-Realistic"
+      ],
+      "websiteUrl": "https://blackforestlabs.ai",
+      "specs": {
+        "resolution": "Configurable (Up to 4K+)",
+        "generationSpeed": "Depends on GPU (Schnell: 2-4s, Dev: 15-25s)",
+        "commercialUse": "Schnell: Apache 2.0 (Yes); Pro: Yes; Dev: Non-commercial",
+        "apiAvailable": "Widely supported via Fal.ai, Together AI, Replicate",
+        "keyFeature": "12B parameter rectified flow transformer architecture",
+        "pros": [
+          "Completely free to self-host locally",
+          "Flawless human hands, text, and skin micro-textures",
+          "Huge community ecosystem"
+        ],
+        "cons": [
+          "Requires heavy GPU (16GB+ VRAM) for local Dev/Pro run",
+          "Dev license is non-commercial"
+        ]
+      }
+    },
+    {
+      "id": "stable-diffusion-35",
+      "name": "Stable Diffusion 3.5 Large",
+      "tagline": "Stability AI flagship open weights model built for high customizability, LoRA training, and commercial safety.",
+      "category": "text-to-image",
+      "categoryName": "Text to Image",
+      "pricingType": "Open Source",
+      "startingPrice": "100% Free Locally / $6.50/mo cloud",
+      "freeTierDetails": "Completely free open-source weights",
+      "rating": 4.7,
+      "reviewsCount": 8100,
+      "badges": [
+        "Self-Hosted",
+        "LoRA Friendly"
+      ],
+      "websiteUrl": "https://stability.ai",
+      "specs": {
+        "resolution": "1024×1024 base (Configurable)",
+        "generationSpeed": "Local GPU dependent (~10-30s)",
+        "commercialUse": "Free for revenue under $1M/yr (Community License)",
+        "apiAvailable": "Yes (Stability REST API)",
+        "keyFeature": "Multimodal Diffusion Transformer (MMDiT)",
+        "pros": [
+          "Zero cost when running offline",
+          "Total privacy and offline control",
+          "Massive LoRA and ControlNet support"
+        ],
+        "cons": [
+          "Requires technical setup (ComfyUI / WebUI)",
+          "High hardware requirements"
+        ]
+      }
+    },
+    {
+      "id": "ideogram-2",
+      "name": "Ideogram 2.0",
+      "tagline": "The undisputed champion of flawless typography, clean graphic designs, posters, and t-shirt art.",
+      "category": "text-to-image",
+      "categoryName": "Text to Image",
+      "pricingType": "Freemium",
+      "startingPrice": "$8/mo",
+      "freeTierDetails": "10 free prompt credits every day",
+      "rating": 4.8,
+      "reviewsCount": 3400,
+      "badges": [
+        "Best for Text",
+        "Graphic Design"
+      ],
+      "websiteUrl": "https://ideogram.ai",
+      "specs": {
+        "resolution": "Up to 2K HD",
+        "generationSpeed": "Fast (~25 seconds)",
+        "commercialUse": "Yes on paid plans",
+        "apiAvailable": "Yes (Ideogram Developer API)",
+        "keyFeature": "Realistic Typography rendering, Color Palette Locking",
+        "pros": [
+          "Renders complex paragraphs and logos without spelling errors",
+          "Daily free credits",
+          "Dedicated design style presets"
+        ],
+        "cons": [
+          "Photorealism slightly behind Midjourney/FLUX",
+          "Free generations are publicly viewable"
+        ]
+      }
+    },
+    {
+      "id": "dall-e-3",
+      "name": "DALL-E 3",
+      "tagline": "OpenAI intelligent image model with deep contextual prompt understanding and conversational edits.",
+      "category": "text-to-image",
+      "categoryName": "Text to Image",
+      "pricingType": "Freemium",
+      "startingPrice": "Free on Copilot / $20/mo Plus",
+      "freeTierDetails": "Free via Microsoft Designer / Copilot",
+      "rating": 4.6,
+      "reviewsCount": 5900,
+      "badges": [
+        "Prompt Master",
+        "Accessible"
+      ],
+      "websiteUrl": "https://openai.com/dall-e-3",
+      "specs": {
+        "resolution": "1024×1024, 1024×1792",
+        "generationSpeed": "Fast (~20-30s)",
+        "commercialUse": "Full commercial rights granted to creator",
+        "apiAvailable": "Yes (OpenAI Images API: $0.04 - $0.08 / img)",
+        "keyFeature": "ChatGPT conversational inpainting & refinement",
+        "pros": [
+          "Understands complex descriptive prompts effortlessly",
+          "Free via Microsoft Copilot",
+          "Consistent composition"
+        ],
+        "cons": [
+          "Heavy aesthetic cartoonish sheen by default",
+          "Strict prompt safety censorship"
+        ]
+      }
+    },
+    {
+      "id": "recraft-ai",
+      "name": "Recraft.ai",
+      "tagline": "AI design platform generating editable vector SVGs, 3D icons, clean brand illustrations, and mockups.",
+      "category": "text-to-image",
+      "categoryName": "Text to Image",
+      "pricingType": "Freemium",
+      "startingPrice": "$20/mo",
+      "freeTierDetails": "Free tier with daily generation credits",
+      "rating": 4.8,
+      "reviewsCount": 2200,
+      "badges": [
+        "Vector SVG",
+        "For UI Designers"
+      ],
+      "websiteUrl": "https://recraft.ai",
+      "specs": {
+        "resolution": "Infinite Scalable Vector (SVG) & High-res PNG",
+        "generationSpeed": "Fast (~15-30s)",
+        "commercialUse": "Yes on paid tiers",
+        "apiAvailable": "Yes (Recraft API)",
+        "keyFeature": "Clean vector node generation and brand color palette locking",
+        "pros": [
+          "True scalable vector SVG export",
+          "Curated style libraries for app icons & UI kits",
+          "Generous canvas editor"
+        ],
+        "cons": [
+          "Not designed for cinematic photorealism",
+          "Advanced vector features need subscription"
+        ]
+      }
+    },
+    {
+      "id": "chatgpt-gpt4o",
+      "name": "OpenAI GPT-4o & o3-mini",
+      "tagline": "Omni-model integrating voice, vision, real-time reasoning, and code execution.",
+      "category": "ai-chatbots",
+      "categoryName": "AI Models & Chatbots",
+      "pricingType": "Freemium",
+      "startingPrice": "$20/mo (Plus)",
+      "freeTierDetails": "Free access to GPT-4o with rate limits",
+      "rating": 4.9,
+      "reviewsCount": 15400,
+      "badges": [
+        "Global Leader",
+        "Multimodal"
+      ],
+      "websiteUrl": "https://chatgpt.com",
+      "specs": {
+        "contextWindow": "128,000 tokens",
+        "generationSpeed": "Near-instantaneous",
+        "commercialUse": "Yes (API & Output rights)",
+        "apiAvailable": "Yes ($2.50 / 1M input tokens)",
+        "keyFeature": "Advanced Voice Mode, Custom GPTs, Python Code Interpreter",
+        "pros": [
+          "Huge plugin ecosystem and tools integration",
+          "Fast multimodal vision understanding",
+          "o-series reasoning models for STEM"
+        ],
+        "cons": [
+          "Token limits on heavy sessions in free tier",
+          "Context window smaller than Gemini"
+        ]
+      }
+    },
+    {
+      "id": "claude-35-sonnet",
+      "name": "Anthropic Claude 3.5 Sonnet",
+      "tagline": "The undisputed favorite among software developers for pristine coding, nuanced reasoning, and Artifacts.",
+      "category": "ai-chatbots",
+      "categoryName": "AI Models & Chatbots",
+      "pricingType": "Freemium",
+      "startingPrice": "$20/mo (Pro)",
+      "freeTierDetails": "Free tier with message refresh intervals",
+      "rating": 4.9,
+      "reviewsCount": 11200,
+      "badges": [
+        "Coder Favorite",
+        "Top Reasoning"
+      ],
+      "websiteUrl": "https://claude.ai",
+      "specs": {
+        "contextWindow": "200,000 tokens",
+        "generationSpeed": "Ultra-fast",
+        "commercialUse": "Yes",
+        "apiAvailable": "Yes ($3.00 / 1M input tokens)",
+        "keyFeature": "Interactive UI Artifacts, Computer Use agentic API, Nuanced writing",
+        "pros": [
+          "Industry-best code generation accuracy",
+          "Natural, non-robotic conversational tone",
+          "Interactive live artifact previews"
+        ],
+        "cons": [
+          "Strict usage limits during peak hours on free/pro",
+          "No native web browsing on free tier"
+        ]
+      }
+    },
+    {
+      "id": "google-gemini-pro",
+      "name": "Google Gemini 1.5 Pro & 2.0 Flash",
+      "tagline": "Massive 2-million token multimodal context window capable of ingesting hours of video and entire codebases.",
+      "category": "ai-chatbots",
+      "categoryName": "AI Models & Chatbots",
+      "pricingType": "Freemium",
+      "startingPrice": "$20/mo (Advanced)",
+      "freeTierDetails": "Free in Google AI Studio & Gemini web app",
+      "rating": 4.8,
+      "reviewsCount": 8900,
+      "badges": [
+        "2M Context",
+        "Multimodal"
+      ],
+      "websiteUrl": "https://gemini.google.com",
+      "specs": {
+        "contextWindow": "2,000,000 tokens (Largest in industry)",
+        "generationSpeed": "Extreme speed on 2.0 Flash",
+        "commercialUse": "Yes via Google Cloud Vertex / AI Studio",
+        "apiAvailable": "Yes (Generous free tier in Google AI Studio)",
+        "keyFeature": "Full movie/audio/codebase processing in a single prompt",
+        "pros": [
+          "Incredible 2M context window handles giant PDFs and full video files",
+          "Deep Google Workspace integration",
+          "Very cheap/free API tier"
+        ],
+        "cons": [
+          "Creative writing can sometimes feel overly structured",
+          "Web app UI occasionally restructures formatting"
+        ]
+      }
+    },
+    {
+      "id": "deepseek-r1",
+      "name": "DeepSeek R1 & V3",
+      "tagline": "Open-weights reasoning model matching OpenAI o1 in math and coding at 95% lower API cost.",
+      "category": "ai-chatbots",
+      "categoryName": "AI Models & Chatbots",
+      "pricingType": "Open Source",
+      "startingPrice": "100% Free Web / $0.14/1M tokens (API)",
+      "freeTierDetails": "Completely free on web & open weights on HuggingFace",
+      "rating": 4.9,
+      "reviewsCount": 9700,
+      "badges": [
+        "Viral Sensation",
+        "Ultra Cheap"
+      ],
+      "websiteUrl": "https://chat.deepseek.com",
+      "specs": {
+        "contextWindow": "64,000 - 128,000 tokens",
+        "generationSpeed": "Fast chain-of-thought display",
+        "commercialUse": "MIT License (Full commercial use allowed)",
+        "apiAvailable": "Yes ($0.14 / 1M input tokens - 95% cheaper than rivals)",
+        "keyFeature": "Pure reinforcement learning chain-of-thought reasoning",
+        "pros": [
+          "Completely free to use online with zero subscription",
+          "Outperforms models 10x its price in math & logic",
+          "Permissive MIT open license"
+        ],
+        "cons": [
+          "Server load errors during peak traffic",
+          "No native vision/audio modal input yet"
+        ]
+      }
+    },
+    {
+      "id": "perplexity-ai",
+      "name": "Perplexity AI",
+      "tagline": "Conversational answer engine with live web citations, academic filtering, and research synthesis.",
+      "category": "productivity",
+      "categoryName": "Productivity & Search",
+      "pricingType": "Freemium",
+      "startingPrice": "$20/mo (Pro)",
+      "freeTierDetails": "Unlimited standard searches, 5 Pro searches daily",
+      "rating": 4.9,
+      "reviewsCount": 12000,
+      "badges": [
+        "Best Search",
+        "Live Citations"
+      ],
+      "websiteUrl": "https://perplexity.ai",
+      "specs": {
+        "contextWindow": "Model dependent (Supports Claude 3.5, GPT-4o, Sonar)",
+        "generationSpeed": "Fast with live citations",
+        "commercialUse": "Yes (API available)",
+        "apiAvailable": "Yes (Perplexity Sonar API)",
+        "keyFeature": "Multi-source real-time web verification & Pro Reasoning Agent",
+        "pros": [
+          "Replaces traditional Google search for research",
+          "Every claim has a clickable source citation",
+          "Uploads and analyzes research PDFs"
+        ],
+        "cons": [
+          "Occasional hallucination on brand new breaking news",
+          "Pro tier needed for model switching"
+        ]
+      }
+    },
+    {
+      "id": "harvey-ai",
+      "name": "Harvey AI",
+      "tagline": "The premier enterprise AI platform trusted by top global law firms for contract analysis and litigation prep.",
+      "category": "legal-tools",
+      "categoryName": "Legal & Contract AI",
+      "pricingType": "Paid",
+      "startingPrice": "Custom Enterprise (~$10k+/yr)",
+      "freeTierDetails": "No public free tier (Enterprise law firms only)",
+      "rating": 4.9,
+      "reviewsCount": 840,
+      "badges": [
+        "Enterprise Legal",
+        "Top Tier"
+      ],
+      "websiteUrl": "https://harvey.ai",
+      "specs": {
+        "targetAudience": "Top-tier Law Firms & Enterprise Legal Departments",
+        "compliance": "SOC2 Type II, ISO 27001, Zero-training guarantee",
+        "commercialUse": "Yes (Professional attorney supervision required)",
+        "apiAvailable": "Enterprise integration",
+        "keyFeature": "Custom legal LLMs fine-tuned on comprehensive legal corpora",
+        "pros": [
+          "Trained specifically on complex legal doctrine and precedent",
+          "Extreme data security and strict confidentiality",
+          "Comprehensive contract redlining"
+        ],
+        "cons": [
+          "Expensive enterprise-only pricing",
+          "Waitlist approval required"
+        ]
+      }
+    },
+    {
+      "id": "cocounsel-thomson-reuters",
+      "name": "CoCounsel (Thomson Reuters / Casetext)",
+      "tagline": "Reliable legal AI assistant for fast deposition prep, case law research, and document verification.",
+      "category": "legal-tools",
+      "categoryName": "Legal & Contract AI",
+      "pricingType": "Paid",
+      "startingPrice": "$250 - $400/user/mo",
+      "freeTierDetails": "Product demo available on request",
+      "rating": 4.8,
+      "reviewsCount": 1100,
+      "badges": [
+        "Case Law",
+        "Attorney Verified"
+      ],
+      "websiteUrl": "https://casetext.com/cocounsel",
+      "specs": {
+        "targetAudience": "Litigators, Solo Practitioners, Law Firms",
+        "compliance": "Strict attorney-client privilege protection",
+        "commercialUse": "Yes",
+        "apiAvailable": "Enterprise integration",
+        "keyFeature": "Search database of verified citations with zero hallucination check",
+        "pros": [
+          "Cites real, verified judicial opinions",
+          "Extracts key admissions from 1000s of deposition pages",
+          "Backed by Thomson Reuters database"
+        ],
+        "cons": [
+          "High monthly subscription fee",
+          "Geared primarily towards US law"
+        ]
+      }
+    },
+    {
+      "id": "spellbook",
+      "name": "Spellbook",
+      "tagline": "Direct Microsoft Word add-in that reviews and drafts legal contracts 10x faster using GPT-4.",
+      "category": "legal-tools",
+      "categoryName": "Legal & Contract AI",
+      "pricingType": "Paid",
+      "startingPrice": "$99 - $199/user/mo",
+      "freeTierDetails": "7-day free trial on approval",
+      "rating": 4.7,
+      "reviewsCount": 1450,
+      "badges": [
+        "Word Add-in",
+        "Contract Drafting"
+      ],
+      "websiteUrl": "https://spellbook.legal",
+      "specs": {
+        "targetAudience": "Transactional Attorneys & In-House Counsel",
+        "compliance": "Zero data retention for model training",
+        "commercialUse": "Yes",
+        "apiAvailable": "No (Microsoft Word Plugin)",
+        "keyFeature": "Missing Clause Detection, Aggressive Redlining, Deal Term Analyzer",
+        "pros": [
+          "Works right inside Microsoft Word where lawyers already work",
+          "Detects aggressive or unusual negotiation clauses",
+          "Auto-drafts counter-proposals"
+        ],
+        "cons": [
+          "Requires Microsoft Word desktop/web",
+          "Subscription required after trial"
+        ]
+      }
+    },
+    {
+      "id": "robin-ai",
+      "name": "Robin AI",
+      "tagline": "Contract copilot combining Anthropic Claude AI with an in-house legal team for guaranteed accuracy.",
+      "category": "legal-tools",
+      "categoryName": "Legal & Contract AI",
+      "pricingType": "Freemium",
+      "startingPrice": "Free Basic / $500/mo team",
+      "freeTierDetails": "Free plan for individual contract reviews",
+      "rating": 4.7,
+      "reviewsCount": 920,
+      "badges": [
+        "Freemium Legal",
+        "Human-in-the-Loop"
+      ],
+      "websiteUrl": "https://robinai.com",
+      "specs": {
+        "targetAudience": "Startups, Procurement Teams, SMB Legal",
+        "compliance": "GDPR, SOC2, Confidential cloud",
+        "commercialUse": "Yes",
+        "apiAvailable": "Yes",
+        "keyFeature": "85% faster contract sign-offs with legal playbook enforcement",
+        "pros": [
+          "Has a free tier to review NDAs and standard contracts",
+          "Enforces your company negotiation playbook",
+          "Optional human lawyer audit"
+        ],
+        "cons": [
+          "Team features require enterprise tiers",
+          "Complex litigation beyond scope"
+        ]
+      }
+    },
+    {
+      "id": "donotpay",
+      "name": "DoNotPay",
+      "tagline": "The world first robot lawyer for consumers: dispute parking tickets, fight fees, and cancel subscriptions.",
+      "category": "legal-tools",
+      "categoryName": "Legal & Contract AI",
+      "pricingType": "Paid",
+      "startingPrice": "$36 every 3 months",
+      "freeTierDetails": "No free tier",
+      "rating": 4.2,
+      "reviewsCount": 6500,
+      "badges": [
+        "Consumer Law",
+        "Automated"
+      ],
+      "websiteUrl": "https://donotpay.com",
+      "specs": {
+        "targetAudience": "Everyday consumers, tenants, travelers",
+        "compliance": "Consumer rights advocacy",
+        "commercialUse": "Personal use only",
+        "apiAvailable": "No",
+        "keyFeature": "Automated demand letters, small claims filing guides, airline refunds",
+        "pros": [
+          "Saves consumers money on unfair charges",
+          "Pre-written demand letter templates for US/UK",
+          "Easy mobile app interface"
+        ],
+        "cons": [
+          "Not meant for professional corporate litigation",
+          "Recurring quarterly billing model"
+        ]
+      }
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "tagline": "The undisputed world leader in hyper-expressive AI voice generation, voice cloning, and audiobooks.",
+      "category": "audio-voice",
+      "categoryName": "Voice & Music AI",
+      "pricingType": "Freemium",
+      "startingPrice": "$5/mo",
+      "freeTierDetails": "10,000 free characters every month",
+      "rating": 4.9,
+      "reviewsCount": 8900,
+      "badges": [
+        "Industry Standard",
+        "Top Voice"
+      ],
+      "websiteUrl": "https://elevenlabs.io",
+      "specs": {
+        "languages": "32+ languages with native accents",
+        "latency": "Ultra-low (~150ms conversational API)",
+        "commercialUse": "Yes (on paid plans)",
+        "apiAvailable": "Industry best Voice & Conversational AI API",
+        "keyFeature": "Instant Voice Cloning (from 1 min sample) & Professional Voice Cloning",
+        "pros": [
+          "Human-like emotional inflection, laughter, and sighs",
+          "Generous 10k free characters per month",
+          "Massive public voice library"
+        ],
+        "cons": [
+          "Voice cloning requires paid plan ($5/mo)",
+          "Character counter depletes quickly on long audiobooks"
+        ]
+      }
+    },
+    {
+      "id": "suno-ai",
+      "name": "Suno AI (v3.5 / v4)",
+      "tagline": "Generate complete studio-quality songs with vocals, lyrics, instrumentation, and genres from a single prompt.",
+      "category": "audio-voice",
+      "categoryName": "Voice & Music AI",
+      "pricingType": "Freemium",
+      "startingPrice": "$10/mo",
+      "freeTierDetails": "50 free credits daily (5 songs / 10 generations)",
+      "rating": 4.8,
+      "reviewsCount": 7100,
+      "badges": [
+        "Full Song Maker",
+        "Viral Hit"
+      ],
+      "websiteUrl": "https://suno.com",
+      "specs": {
+        "duration": "Up to 4 minutes per track (extendable)",
+        "audioQuality": "High fidelity stereo master",
+        "commercialUse": "Yes (Pro and Premier plans own copyright)",
+        "apiAvailable": "Community / Unofficial API",
+        "keyFeature": "Full lyrics composition, multi-genre fusion, stem separation",
+        "pros": [
+          "Daily free credits reset every 24 hours",
+          "Incredible musicality across pop, rap, EDM, rock, jazz",
+          "Custom lyrics support"
+        ],
+        "cons": [
+          "Commercial rights only on paid plan",
+          "Occasional muffled vocal artifacts"
+        ]
+      }
+    },
+    {
+      "id": "udio-music",
+      "name": "Udio",
+      "tagline": "Audiophile-grade music generator created by ex-DeepMind researchers with pristine vocal clarity.",
+      "category": "audio-voice",
+      "categoryName": "Voice & Music AI",
+      "pricingType": "Freemium",
+      "startingPrice": "$10/mo",
+      "freeTierDetails": "10 free credits daily (approx 10 songs/mo)",
+      "rating": 4.8,
+      "reviewsCount": 4300,
+      "badges": [
+        "Studio Fidelity",
+        "Complex Harmonies"
+      ],
+      "websiteUrl": "https://udio.com",
+      "specs": {
+        "duration": "Modular 32-second extensions up to full songs",
+        "audioQuality": "High-definition studio stems",
+        "commercialUse": "Yes (Standard/Pro tiers)",
+        "apiAvailable": "Waitlist",
+        "keyFeature": "Stem downloads (Separate Vocals, Bass, Drums, Instruments)",
+        "pros": [
+          "Audiophile acoustic depth and pristine vocal frequency response",
+          "Audio inpainting (replace individual bars)",
+          "Great for EDM, Jazz & Classical"
+        ],
+        "cons": [
+          "Song extension workflow requires slight learning curve",
+          "Slower generation than Suno"
+        ]
+      }
+    },
+    {
+      "id": "cursor-editor",
+      "name": "Cursor",
+      "tagline": "The AI-native code editor (VS Code fork) empowering developers to build software at 10x speed.",
+      "category": "coding-dev",
+      "categoryName": "Coding & Dev Agents",
+      "pricingType": "Freemium",
+      "startingPrice": "$20/mo (Pro)",
+      "freeTierDetails": "14-day Pro trial + free basic completions",
+      "rating": 4.9,
+      "reviewsCount": 12500,
+      "badges": [
+        "Dev Favorite",
+        "Essential"
+      ],
+      "websiteUrl": "https://cursor.com",
+      "specs": {
+        "baseEditor": "VS Code fork (Full extension & theme support)",
+        "modelsSupported": "Claude 3.5 Sonnet, GPT-4o, Cursor-Fast",
+        "commercialUse": "Yes",
+        "keyFeature": "Composer (multi-file agentic code generation) & Codebase Indexing",
+        "pros": [
+          "Indexes your whole repository for 100% contextual answers",
+          "Composer writes and edits multiple files simultaneously",
+          "Accept/reject diffs with 1 click"
+        ],
+        "cons": [
+          "Fast premium requests capped at 500/mo on Pro",
+          "Requires replacing standard VS Code installation"
+        ]
+      }
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "tagline": "The original AI pair programmer seamlessly built directly into Visual Studio, VS Code, and JetBrains.",
+      "category": "coding-dev",
+      "categoryName": "Coding & Dev Agents",
+      "pricingType": "Paid",
+      "startingPrice": "$10/mo (Free for verified students)",
+      "freeTierDetails": "Free for verified students and open-source maintainers",
+      "rating": 4.7,
+      "reviewsCount": 16800,
+      "badges": [
+        "Enterprise Ready",
+        "Seamless"
+      ],
+      "websiteUrl": "https://github.com/features/copilot",
+      "specs": {
+        "baseEditor": "Plugins for VS Code, Visual Studio, JetBrains, Neovim",
+        "modelsSupported": "Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro",
+        "commercialUse": "Yes (Enterprise indemnification)",
+        "keyFeature": "Pull request summaries, CLI completions, multi-model switcher",
+        "pros": [
+          "Backed by Microsoft and GitHub infrastructure",
+          "Free for millions of verified students",
+          "Zero configuration required"
+        ],
+        "cons": [
+          "No free tier for general developers",
+          "Multi-file edits slower than Cursor"
+        ]
+      }
+    },
+    {
+      "id": "bolt-new",
+      "name": "Bolt.new by StackBlitz",
+      "tagline": "Prompt, build, run, and deploy fullstack web applications entirely in your browser using WebContainers.",
+      "category": "coding-dev",
+      "categoryName": "Coding & Dev Agents",
+      "pricingType": "Freemium",
+      "startingPrice": "$20/mo",
+      "freeTierDetails": "Free daily tokens for quick prototyping",
+      "rating": 4.8,
+      "reviewsCount": 5400,
+      "badges": [
+        "Fullstack Browser",
+        "Zero Setup"
+      ],
+      "websiteUrl": "https://bolt.new",
+      "specs": {
+        "runtime": "WebContainers (Node.js running directly inside browser)",
+        "frameworks": "React, Vite, Next.js, Node, Supabase, Tailwind",
+        "commercialUse": "Yes (Full code export to GitHub/Netlify)",
+        "keyFeature": "Installs npm packages, executes dev servers, and fixes runtime errors live",
+        "pros": [
+          "Runs complete fullstack Node.js apps without downloading code",
+          "One-click deploy to Netlify",
+          "Live error auto-fixing"
+        ],
+        "cons": [
+          "Token usage burns quickly on large projects",
+          "Memory limited by browser tab"
+        ]
+      }
+    }
+  ]
+}

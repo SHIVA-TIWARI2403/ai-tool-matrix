@@ -1,0 +1,60 @@
+{
+  "success": true,
+  "total": 9,
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Tools",
+      "icon": "Sparkles",
+      "count": 42
+    },
+    {
+      "id": "text-to-video",
+      "name": "Text to Video",
+      "icon": "Video",
+      "count": 7
+    },
+    {
+      "id": "image-to-video",
+      "name": "Image to Video",
+      "icon": "Film",
+      "count": 6
+    },
+    {
+      "id": "text-to-image",
+      "name": "Text to Image",
+      "icon": "Image",
+      "count": 8
+    },
+    {
+      "id": "ai-chatbots",
+      "name": "AI Models & Chatbots",
+      "icon": "BotMessageSquare",
+      "count": 7
+    },
+    {
+      "id": "legal-tools",
+      "name": "Legal & Contract AI",
+      "icon": "Scale",
+      "count": 6
+    },
+    {
+      "id": "audio-voice",
+      "name": "Voice & Music AI",
+      "icon": "Mic",
+      "count": 5
+    },
+    {
+      "id": "coding-dev",
+      "name": "Coding & Dev Agents",
+      "icon": "Code2",
+      "count": 6
+    },
+    {
+      "id": "productivity",
+      "name": "Productivity & Search",
+      "icon": "Zap",
+      "count": 5
+    }
+  ]
+}
